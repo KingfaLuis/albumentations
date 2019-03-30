@@ -13,7 +13,7 @@ def get_version():
 
 
 def get_test_requirements():
-    requirements = ['pytest']
+    requirements = ['pytest', 'torch']
     if sys.version_info < (3, 3):
         requirements.append('mock')
     return requirements
