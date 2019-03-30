@@ -24,7 +24,7 @@ matrix:
 
 install:
 - if [[ "$TEST_MODE" == "DOCS" ]]; then pip install .; fi
-- if [[ "$TEST_MODE" != "DOCS" ]]; then pip install .[tests]; fi
+- if [[ "$TEST_MODE" != "DOCS" ]]; then pip install .[tests] --progress-bar off; fi
 - if [[ "$TEST_MODE" != "DOCS" ]]; then pip install flake8 flake8-docstrings; fi
 
 script:
